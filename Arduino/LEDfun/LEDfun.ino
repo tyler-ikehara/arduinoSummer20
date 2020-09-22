@@ -1,3 +1,9 @@
+/* A program that changes the color of a RGB LED depending on which button is pressed.
+ * The value written to the R, G, or B depends on the value of a potentiometer.
+ * Full video of the circuit: https://www.youtube.com/watch?v=rthQdZFWuiM
+ * - Tyler Ikehara 2020
+*/
+
 int redRGBpin = 11;
 int blueRGBpin = 10;
 int greenRGBpin = 9;
