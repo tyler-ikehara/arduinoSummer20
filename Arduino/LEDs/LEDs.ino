@@ -3,6 +3,7 @@
  * - Tyler Ikehara 2020
  */
 
+//Declaring pin numbers
 const int redLEDpin = 11;
 const int greenLEDpin = 9;
 const int blueLEDpin = 10;
@@ -11,13 +12,14 @@ const int buttonRedPin = 2;
 const int buttonGreenPin = 3;
 const int buttonBluePin = 4;
 
+//initializing variables
 int redVal = 1;
 int blueVal = 1;
 int greenVal = 1;
 int buttonR = 0;
 int buttonG = 0;
 int buttonB = 0;
-void setup() {
+void setup() { //setting up the serial monitor and the pinmodes of the LEDs and buttons.
   Serial.begin(9600);
   pinMode(redLEDpin, OUTPUT);
   pinMode(greenLEDpin, OUTPUT);
@@ -27,7 +29,7 @@ void setup() {
   pinMode(buttonBluePin, INPUT);
 }
 
-void loop() {
+void loop() { //depending on which button is pressed, the value of the R, G, or B LED is changed
   buttonR = digitalRead(buttonRedPin);
   buttonB = digitalRead(buttonBluePin);
   buttonG = digitalRead(buttonGreenPin);
