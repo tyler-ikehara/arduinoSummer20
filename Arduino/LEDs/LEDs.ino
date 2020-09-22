@@ -1,3 +1,8 @@
+/* A program that changes the color of a RGB LED depending on how long a specific button is held.
+ * Full video of the circuit: https://www.youtube.com/watch?v=q72axrMjkzs
+ * - Tyler Ikehara 2020
+ */
+
 const int redLEDpin = 11;
 const int greenLEDpin = 9;
 const int blueLEDpin = 10;
